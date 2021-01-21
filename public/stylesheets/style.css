@@ -1,8 +1,22 @@
 body {
-  padding: 50px;
+  padding: 0px;
+  margin: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+body{
+  width: 100%;
+  height: 100vh;
+  color: black;
+}
+.navbar{
+  width: 100%;
+  color: lightcoral;
+  height: 10%;
 
-a {
-  color: #00B7FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-link{
+  background-color: aquamarine;
 }
