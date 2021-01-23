@@ -1,6 +1,10 @@
+:root{
+    --primary_font: 36px;
+    --pic_size: 20vh;
+    --home_bg_card: 70%;
+}
 .home{
     height: 100vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,14 +12,14 @@
 }
 .open-line{
     margin-top: 5vh;
-    font-size: 36px;
+    font-size: var(--primary_font);
     line-height: 50px;
     color: #B6B6B6;
 }
 .container{
     margin-top: 5vh;
     height: 50vh;
-    width: 70%;
+    width: var(--home_bg_card);
     
     background: #2E6158;
     border-radius: 32px;
@@ -25,8 +29,8 @@
     align-items: center;
 }
 .container img{
-    width: 20vh;
-    height: 20vh;
+    width: var(--pic_size);
+    height: var(--pic_size);
     border-radius: 20%;
     background: #B6B6B6;
     border: .5vh solid white;
@@ -36,7 +40,7 @@
 
     color: white;
     font-family: 'Space Mono', monospace;
-    font-size: 36px;
+    font-size: var(--primary_font);
     line-height: 55px;
 }
 .contact_btn{
@@ -49,4 +53,31 @@
 }
 .contact_btn:hover{
     color: gold;
+}
+
+@media only screen and (max-width: 1260px){
+    :root{
+        --primary_font: 24px;
+        --pic_size: 18vh;
+        --home_bg_card: 80%;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    :root{
+        --primary_font: 18px;
+        --home_bg_card: 95%;
+    }
+    .bio{
+        max-width: 75%;
+        margin-top: 3vh;
+        line-height: 30px;
+    }
+    .contact_btn{
+        margin-top: 3vh;
+    }
+    .container{
+        padding: 5vh 0;
+        flex-direction: column;
+    }
 }
