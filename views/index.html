@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="/stylesheets/home.css">
     <link rel="stylesheet" href="/stylesheets/education.css">
-    <link rel="stylesheet" href="/stylesheets/projects.css">
     <link rel="stylesheet" href="/stylesheets/contact.css">
+    <link rel="stylesheet" href="/stylesheets/projects.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   </head>
@@ -55,7 +55,17 @@
 
     </section>
     <section class="contact">
-
+      <div class="contact-container flex-column-center">
+        <div class="contact-form-card flex-column-center">
+          <span class="contact-title">Contact Form</span>
+          <form id="contact-form" class="contact-form">
+            <input type="text" name="username" value="Name" />
+            <input type="email" name="email" value="Email"/>
+            <textarea type="text" name="message">Message</textarea>
+            <button id="submitBtn" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
     </section>
     
     <script src="" async defer></script>
