@@ -31,10 +31,23 @@
   margin: 2vh 0;
   width: 100%;
 }
+.contact-form input:focus, textarea:focus{
+  outline: rgb(144, 200, 238);
+}
 .contact-form input{
   height: 4vh;
 }
 
 .contact-form textarea{
   height: 10vh;
+}
+#submitBtn{
+  width: auto;
+  height: auto;
+}
+
+@media only screen and (max-width: 414px){
+  .contact-form-card{
+    width: 95%;
+  }
 }

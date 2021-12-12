@@ -58,16 +58,16 @@
       <div class="contact-container flex-column-center">
         <div class="contact-form-card flex-column-center">
           <span class="contact-title">Contact Form</span>
-          <form id="contact-form" class="contact-form">
-            <input type="text" name="username" value="Name" />
-            <input type="email" name="email" value="Email"/>
-            <textarea type="text" name="message">Message</textarea>
-            <button id="submitBtn" type="submit">Send Message</button>
+          <form id="contact-form" method="POST" class="contact-form" action="/api">
+            <input id="username" type="text" name="username" value="Name" />
+            <input id="email" type="email" name="email" value="Email"/>
+            <textarea id="message" type="text" name="message">Message</textarea>
+            <button id="submitBtn" type="submit" onsubmit="return validateContactForm();" >Send Message</button>
           </form>
         </div>
       </div>
     </section>
     
-    <script src="" async defer></script>
+    <script src="/javascripts/contact.js" async defer></script>
   </body>
 </html>

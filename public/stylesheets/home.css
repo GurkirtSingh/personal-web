@@ -1,7 +1,7 @@
 :root{
     --primary_font: 36px;
     --pic_size: 20vh;
-    --home_bg_card: 70%;
+    --home_bg_card_w: 70%;
 }
 .home{
     height: 100vh;
@@ -19,7 +19,7 @@
 .container{
     margin-top: 5vh;
     height: 50vh;
-    width: var(--home_bg_card);
+    width: var(--home_bg_card_w);
     
     background: #2E6158;
     border-radius: 32px;
@@ -63,10 +63,10 @@
     }
 }
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 414px){
     :root{
         --primary_font: 18px;
-        --home_bg_card: 95%;
+        --home_bg_card_w: 95%;
     }
     .bio{
         max-width: 75%;

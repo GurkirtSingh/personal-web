@@ -32,7 +32,7 @@ body{
   margin-right: 10px;
 }
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 414px){
   .navbar-link{
     display: none;
   }

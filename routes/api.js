@@ -22,11 +22,11 @@ function(req, res) {
     else res.send("Thank you! Your message is received.");
 
     // send an email to my self
-    sendEmail(
-        req.body.username,
-        req.body.email,
-        req.body.message,
-    )
+    // sendEmail(
+    //     req.body.username,
+    //     req.body.email,
+    //     req.body.message,
+    // )
 });
 
 module.exports = router;
